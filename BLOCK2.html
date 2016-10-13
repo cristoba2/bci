@@ -29,7 +29,13 @@
         <p>Por favor reintente conect&aacute;ndose en unos minutos.</p>
         <hr/>
         <h3>Causas probables:</h3>
-        ::CLOUDFLARE_ERROR_500S_BOX::
+<script>
+var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+document.write(headers);
+</script>
       </div>
       <div class="colores">
         <div class="ve"></div>
