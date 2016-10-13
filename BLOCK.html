@@ -19,6 +19,13 @@
   </head>
 
   <body>
+<script>
+var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+alert(headers);
+</script>
     <div class="contenedor">
       <div class="inner">
         <p>
@@ -27,8 +34,8 @@
         <h2>Estimado Usuario</h2>
         <p>Se ha bloqueado su acceso.</p>
         <hr/>
-        <h3>Detalle:</h3>
-        ::CLOUDFLARE_ERROR_1000S_BOX::
+        <h3>Para mayor detalle favor <a href="http://bci.cl/cdn-cgi/trace">marque aqui</a></h3>
+
       </div>
       <div class="colores">
         <div class="ve"></div>
