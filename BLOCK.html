@@ -19,14 +19,6 @@
   </head>
 
   <body>
-<script>
-var req = new XMLHttpRequest();
-req.open('GET', document.location, false);
-req.send(null);
-var headers = req.getAllResponseHeaders().toLowerCase();
-alert(headers);
-</script>
-    <div class="contenedor">
       <div class="inner">
         <p>
           <img class="logo" src="https://bci.modyocdn.com/uploads/1f809a87-5450-4088-a73d-9efb17a61604/original/logo-bci.svg" alt="Banco Bci">
@@ -36,6 +28,15 @@ alert(headers);
         <hr/>
         <h3>Para mayor detalle favor <a href="http://bci.cl/cdn-cgi/trace">marque aqui</a></h3>
 
+<script>
+var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+document.write(headers);
+</script>
+
+    <div class="contenedor">
       </div>
       <div class="colores">
         <div class="ve"></div>
